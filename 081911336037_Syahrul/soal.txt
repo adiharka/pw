@@ -1,0 +1,17 @@
+Buatlah halaman web dengan HTML yang didalamnya terdapat :
+
+Header Web
+Menu (menggunakan list)
+Gambar
+Link
+list
+Table
+Form Pendaftaran Sederhana
+Catatan :
+ Layout menggunakan css
+Ada form control jika format tdk sesuai ketentuan dengan menggunakan javascirpt.
+Misal field yang harus diisi, jika user tidak mengisi akan muncul peringatan, field email jika tidak ada karakter ‘@’ maka akan muncul peringatan juga dll.
+Upload ke domain masing2
+Bersifat individu
+Kirim file doc yang berisi alamat url tugas.
+Batas pengumpulan : Kamis, 8 April 2021, 15.00

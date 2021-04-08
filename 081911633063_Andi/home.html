@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Exo:wght@500&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="navbar">
+            <h1>Aula</h1>
+            <ul>
+                <li class="active">
+                    <img id="home" src="img/icon/home.svg">HOME</li>
+                <li onclick="location.href='jadwal.html';" onmouseover="setNewImage('jadwal')" onmouseout="setOldImage('jadwal')">
+                    <img id="jadwal" src="img/icon/jadwal-outline.svg" old="img/icon/jadwal-outline.svg" hover="img/icon/jadwal.svg">JADWAL</li>
+                <li onclick="location.href='tugas.html';" onmouseover="setNewImage('tugas')" onmouseout="setOldImage('tugas')">
+                    <img id="tugas" src="img/icon/tugas-outline.svg" old="img/icon/tugas-outline.svg" hover="img/icon/tugas.svg">TUGAS</li>
+                <li onclick="location.href='absen.html';" onmouseover="setNewImage('absen')" onmouseout="setOldImage('absen')">
+                    <img id="absen" src="img/icon/absen-outline.svg" old="img/icon/absen-outline.svg" hover="img/icon/absen.svg">ABSEN
+            </li>
+            </ul>
+        </div>
+        <div style=" display: flex;">
+            <div style="width: 13rem;"></div>
+            <div class="isi">
+                <h1 style="padding-left: 1rem;">Selamat Datang</h1>
+                <img style="object-fit: cover;" width="400px" src="https://ouch-cdn.icons8.com/preview/772/f9ab877c-4089-459c-9814-88455b030420.png" alt="">
+            </div>
+    </div>
+</body>
+</html>

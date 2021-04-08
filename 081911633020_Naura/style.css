@@ -1,0 +1,251 @@
+:root {
+    --primary: #1E56A0;
+    --base: #FFFFFF;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.header {
+    height: 133px;
+    width: 100%;
+    background-color: var(--base);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    box-sizing: border-box;
+    font-family: Nova Cut;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 108px;
+    color: var(--primary);
+}
+
+.header .topnav {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-right: 108px;
+}
+
+.header .topnav a {
+    font-family: Overlock;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--primary);
+}
+
+.footer {
+    height: 150px;
+    width: 100%;
+    background-color: var(--primary);
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftnav {
+    display: flex;
+    flex-direction: column;
+    /* box-sizing: border-box; */
+    width: 108px;
+    /* gap: 70px; */
+    height: 70%;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 1rem;
+    align-items: center;
+    border-right: 1px solid #D6E4F0;
+    /* align-content: space-between; */
+}
+
+.leftnav img {
+    width: 55px;
+    cursor: pointer;
+}
+
+.leftnav img:hover {
+    background-color: #adb1b9;
+    border-radius: 5px;
+}
+
+.leftnav .button {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    /* align-items: space-between; */
+}
+
+.leftnav .button img {
+    width: 23.75px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    gap: 5px;
+    align-content: center;
+    box-sizing: border-box;
+    margin: 5rem;
+    margin-top: 2rem;
+}
+
+.form-group h1 {
+    font-family: Overlock;
+    font-style: bold;
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary);
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.form-group label {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #004182;
+    opacity: 0.8;
+}
+
+.form-group input {
+    background: #F4F6F9;
+    box-sizing: border-box;
+    border-radius: 3.5px;
+    max-width: 435px;
+    height: 50px;
+    border: none;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #8692A6;
+    opacity: 0.6;
+    padding-left: 1rem;
+}
+
+.form-group .primary-button {
+    align-items: center;
+}
+
+.form-group .primary-button button {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    width: 140px;
+    height: 43px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 2rem;
+    color: var(--base);
+    cursor: pointer;
+}
+
+table,
+tr,
+th,
+td {
+    border-collapse: collapse;
+    border: 1px #dddd solid;
+    padding: 10px;
+}
+
+.form-group {
+    height: 680px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .left {
+    padding-left: 108px;
+}
+
+.footer .right {
+    padding-right: 108px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .right img {
+    width: 23.75px;
+}
+
+.footer .left p {
+    font-family: Overlock;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0px;
+    color: var(--base);
+}
+
+.footer .right a {
+    font-family: Overlock;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    margin: 0px;
+    color: var(--base);
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: left;
+}
+
+.footer .right h4 {
+    font-family: Overlock;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    margin: 0px;
+    color: var(--base);
+    text-align: center;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Calistoga&family=Cormorant:wght@700&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <div class="button">
+                    <div class="flex-row" onmouseover="setNewImage('home')" onmouseout="setOldImage('home')">
+                        <img id="home" src="img/home (1).png" old="img/home (1).png" hover="img/home (2).png" alt="">
+                    </div>
+                    <div class="flex-row" onmouseover="setNewImage('account')" onmouseout="setOldImage('account')">
+                        <img id="account" src="img/account (1).png" old="img/account (1).png" hover="img/account (2).png" alt="">
+                    </div>
+                    <div class="flex-row" onmouseover="setNewImage('news')" onmouseout="setOldImage('news')">
+                        <img id="news" src="img/news (1).png" old="img/news (1).png" hover="img/news (2).png" alt="">
+                    </div>
+                    <div class="flex-row" onmouseover="setNewImage('notif')" onmouseout="setOldImage('notif')">
+                        <img id="notif" src="img/notif (1).png" old="img/notif (1).png" hover="img/notif (2).png" alt="">
+                    </div>
+                    <div style="border-right: 2px solid #575757;">
+                    </div>
+                    <a class="flex-row" href="login.html">LOG IN</a>
+                </div>
+            </div>
+            <div class="right flex-column">
+                <h1>Study Room</h1>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left">
+            <h1>Registration</h1>
+            <p>Let's create your study room account!</p>
+            <form action="" name="registration" onsubmit="return(validateForm());">
+                <div class="form-content">
+                    <label for="name">Username*</label>
+                    <input type="text" class="form-control" id="name" placeholder="Full Name">
+                </div>
+                <div class="form-content">
+                    <label for="email">Email*</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email Address">
+                </div>
+                <div class="form-content">
+                    <label for="hp">Handphone*</label>
+                    <input type="text" class="form-control" id="hp" placeholder="Number Phone">
+                </div>
+                <div class="form-content">
+                    <label for="password">Password*</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="form-content primary-button">
+                    <button type="submit" value="Submit">Regist</button>
+                </div>
+            </form>
+        </div>
+        <div class="right">
+            <img src="img/illust.png" alt="">
+            <div class="contact">
+                <h1>Contact Us</h1>
+                <table>
+                    <tr>
+                        <th>Email</th>
+                        <td style="text-decoration: none;"><a href="mailto:dindaysw@gmail.com">studyroom@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Whatsapp</th>
+                        <td style="text-decoration: none;"><a href="https://wa.me/+6287751410616">087751410616</a></td>
+                    </tr>
+                    <tr>
+                        <th>Instagram</a></th>
+                        <td style="text-decoration: none;"><a href="https://instagram.com">@studyroom</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <p>©2021 Studyroom</p>
+    </div>
+</body>
+
+</html>
