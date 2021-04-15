@@ -1,0 +1,21 @@
+Buka XAMPP, start MySQL sama Apache
+
+Klik Shell
+
+ketik:
+mysql -u root
+
+paste:
+CREATE DATABASE person_066;
+USE person_066;
+CREATE TABLE person_066 (
+idperson INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+nama VARCHAR(20) NOT NULL,
+gender CHAR(1) NOT NULL,
+kotalahir VARCHAR(30),
+tanggallahir DATE,
+alamat VARCHAR(40),
+kota VARCHAR(30),
+foto VARCHAR(50),
+isactive CHAR(1)
+);
