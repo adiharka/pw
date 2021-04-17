@@ -1,0 +1,162 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+} */
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: none;
+}
+
+h1 {
+    font-family: Poppins;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    /* margin: 24px 0; */
+    text-shadow: 1px 1px 0px #FFFFFF, 3px 3px 0px rgba(121, 121, 121, 0.5);
+}
+
+h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    margin: 24px 0;
+    text-shadow: 1px 1px 0px #FFFFFF, 3px 3px 0px rgba(0, 189, 170, 0.5);
+}
+
+button {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    background: none;
+    border-radius: 12px;
+}
+
+a {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #4D4D4D;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+
+svg {
+    position: fixed;
+    z-index: -1;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.collaps {
+    cursor: pointer;
+    padding: 24px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+}
+
+.collaps:hover {
+    background: #cedadb71;
+}
+
+.link {
+    padding: 4px 12px;
+    margin-bottom: 4px;
+}
+
+.link:hover {
+    background: #7be7dc;
+    border-radius: 8px;
+}
+
+.link-purple:hover {
+    background: #d2b2eb;
+}
+
+.container {
+    z-index: 99;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+/* .active, */
+.collapsible:hover {
+    background-color: #555;
+    border-radius: 12px;
+}
+
+.content {
+    padding: 0 12px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.collaps:after {
+    content: '\02795';
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    /* margin-left: 24px; */
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+.matkul {
+    width: 360px;
+    margin: 0 12px;
+}
+
+.card {
+    background: #FFFFFF;
+    border: 2px solid #00BDAA;
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: 10px 10px 0px #bbeee6ab;
+    border-radius: 15px;
+    margin-right: 4px;
+    margin-bottom: 24px;
+    /* padding-bottom: 24px; */
+}
+
+.purple {
+    border: 2px solid #8559A5;
+    box-shadow: 10px 10px 0px #cab1dfa1;
+}
+
+.purple-text {
+    text-shadow: 1px 1px 0px #FFFFFF, 3px 3px 0px rgba(209, 91, 209, 0.5);
+}
