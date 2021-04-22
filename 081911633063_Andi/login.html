@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,33 @@
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Source+Sans+Pro:wght@600&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <div class="navigation">
-        <h1>LOGIN</h1>
-    </div>
-    <div class="container">
-        <form class="container-child">
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input class="form-control" type="email" id="email" placeholder="example@gmail.com">
+    <div style="display: flex; justify-content: center;">
+        <div class="container isi" style="max-width: 1000px;">
+            <form class="container-child">
+                <h1>LOGIN</h1>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="form-control" type="email" id="email" placeholder="example@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input class="form-control" type="password" id="password" placeholder="password">
+                </div>
+                <div class="form-group primary-button">
+                    <a href="home.html"><button type="submit">Login</button></a>
+                    <p>Belum punya akun? <a href="register.html">Register</a></p>
+                </div>
+            </form>
+            <div class="container-child illust">
+                <img src="img/login.png" alt="">
             </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input class="form-control" type="password" id="password" placeholder="password">
-            </div>
-            <div class="form-group primary-button">
-                <button type="submit">Login</button>
-            </div>
-        </form>
-        <div class="container-child illust">
-            <img src="img/login.png" alt="">
         </div>
     </div>
 </body>
+
 </html>

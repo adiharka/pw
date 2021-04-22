@@ -8,6 +8,12 @@
     --form: rgba(255, 255, 255, 0.5);
 }
 
+body {
+    margin: 0px;
+    background: none;
+    background: radial-gradient(100% 2187.83% at 0% 50%, #F9D1AD 0%, #E4DFC2 10%, #85D7D1 30%, #4CC0CE 70.65%, #0190A1 100%);
+}
+
 body::after {
     content: "";
     /* background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX23373694.jpg"); */
@@ -15,8 +21,8 @@ body::after {
     background-repeat:no-repeat;
     background-size: cover; */
     /* background-size: 200px; */
-    background: radial-gradient(100% 2187.83% at 0% 50%, #F9D1AD 0%, #E4DFC2 23.26%, #85D7D1 47.74%, #4CC0CE 70.65%, #0190A1 100%);
-    opacity: 0.85;
+    background: url(img/bg.svg) repeat top left;
+    opacity: 0.02;
     top: 0;
     left: 0;
     bottom: 0;
@@ -34,23 +40,47 @@ h1 {
     color: var(--dark);
 }
 
+p {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--dark);
+}
+
+a {
+    /* text-decoration: none; */
+    color: var(--dark);
+    transition: ease-in;
+}
+
+a:hover {
+    color: var(--primary);
+}
+
 .content {
     height: 100%;
+}
+
+#main {
+    display: flex;
 }
 
 .isi {
     box-sizing: border-box;
     flex: 1;
     margin: 1rem;
-    /* width: 74%; */
-    max-width: 49rem;
+    max-width: 768px;
     padding: 1rem;
     border: solid 1px #DDDDDD;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.25);
     background: rgba(255, 255, 255, 0.5);
-    /* backdrop-filter: blur(35px); */
+}
+
+#geser {
+    width: 13rem;
 }
 
 .navigation h1,
@@ -62,30 +92,33 @@ h1 {
     /* line-height: 48px; */
     color: var(--dark);
     text-align: center;
-
-    /* position: sticky; */
-    /* Set the navbar to fixed position */
-    /* top: 0; */
-    /* Position the navbar at the top of the page */
-    /* width: 100%; */
-    /* Full width */
-
-    /* background: var(--form); */
-    /* background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(5px); */
-    /* border: 1px solid var(--form); */
     margin-top: 1.5rem;
-    /* box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.25); */
-    /* text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.55); */
+}
+
+.isi h1 {
+    margin-top: 0;
 }
 
 .task-group {
-    border-radius: 10px;
+    border-radius: 16px;
     border: #DDDDDD 1px solid;
     background: rgba(255, 255, 255, 0.5);
-
     padding: 1rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    display: flex;
+    flex-direction: column;
+    grid-area: 1rem;
+}
+
+.group-jadwal {
+    max-width: 200px;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
 
 .task-group h1 {
@@ -108,22 +141,27 @@ h1 {
     justify-content: space-between;
     height: 78px;
     margin-bottom: 0px;
-
 }
 
-.task[mapel=mat] {
+.jadwal {
+    height: 3rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+*[color=yellow] {
     background: #f5d470;
 }
 
-.task[mapel=kim] {
+*[color=tosca] {
     background: #64c5cf;
 }
 
-.task[mapel=sej] {
+*[color=red] {
     background: #e2818e;
 }
 
-.task[mapel=fis] {
+*[color=purple] {
     background: #9fb0dd;
 }
 
@@ -164,19 +202,24 @@ h1 {
     margin-top: 100px;
     margin-left: 60px;
     margin-right: 60px;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-child {
     margin: 10px;
     min-width: 100px;
     flex: 1;
+    align-items: center;
+    gap: 1rem;
 }
 
 .container-child:first-child {
     /* min-width: 660px; */
     margin: 0px;
-    align-items: flex-end;
-    margin-right: 35px;
+    align-items: flex-start;
+    margin-right: 1rem;
+    margin-left: 2rem;
 }
 
 .navbar {
@@ -188,12 +231,16 @@ h1 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     position: fixed;
-    /* border: solid 1px #DDDDDD; */
-    /* border-radius: 0px 20px 20px 0px; */
     background-color: white;
     box-shadow: 0px 2px 25px rgba(58, 58, 58, 0.25);
     background: rgba(255, 255, 255, 0.5);
-    /* backdrop-filter: blur(35px); */
+}
+
+.btm {
+    z-index: -1;
+    background: none;
+    box-shadow: none;
+    bottom: 0;
 }
 
 .navbar ul {
@@ -246,10 +293,6 @@ h1 {
     height: auto;
 }
 
-body {
-    margin: 0px;
-}
-
 table,
 tr,
 th,
@@ -278,12 +321,24 @@ table {
 form {
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .form-group {
-    margin-bottom: 30px;
+    margin-bottom: 1rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -335,6 +390,12 @@ form {
     /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); */
 }
 
+.form-content label {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
 .form-double {
     width: 100%;
     display: flex;
@@ -363,6 +424,44 @@ form {
     transition-property: color, background-color;
 }
 
+.center {
+    justify-content: center;
+}
+
+.fill {
+    font-family: Exo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    height: 33px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card {
+    background: rgb(255, 255, 255, 0.75);
+    border-radius: 10px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    width: 200px;
+}
+
+.absen-button button {
+    font-family: Exo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    height: 33px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background: var(--dark);
+}
+
 
 .primary-button button:hover,
 .primary-button button:focus,
@@ -371,14 +470,29 @@ form {
     background-color: var(--primary);
 }
 
-@media screen and (max-width: 1023px) {
+#garis {
+    pointer-events: none;
+}
+
+.garis {
+    border: 1px rgba(7, 36, 129, 0.2) solid; 
+    width: 10rem; 
+    margin: auto;
+    background: none;
+    pointer-events: none;
+}
+
+#header {
+    padding-left: 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
     .container {
         margin-left: 20px;
         margin-right: 20px;
     }
 
     .container-child:first-child {
-        /* min-width: 660px; */
         margin: 0px;
         align-items: center;
         margin-right: 0px;
@@ -386,5 +500,84 @@ form {
 
     .illust {
         display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background: none;
+    }
+    body::after {
+        height: 100vh;
+        opacity: 1;
+        background: radial-gradient(100% 100% at 30% 30%, #F9D1AD 0%, #E4DFC2 10%, #85D7D1 30%, #4CC0CE 70.65%, #0190A1 100%);
+    }
+
+    #header {
+        text-align: center;
+        padding: 0;
+    }
+
+    #geser {
+        width: 0;
+    }
+    
+    #garis {
+        width: 0px;
+        padding: 0;
+        height: 0.5rem;
+    }
+
+    .garis {
+        height: 100%;
+    }
+
+    .navbar {
+        height: 2.5rem;
+        width: 100%;
+        padding: 0;
+        top: auto;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        /* background: rgba(255, 255, 255, 0.2); */
+        backdrop-filter: blur(15px);
+    }
+    
+    .navbar h1{
+        display: none;
+    }
+
+    .navbar span {
+        display: none;
+    }
+
+    .navbar .active span {
+        display: flex;
+        font-size: 12px;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* justify-content: space-between; */
+        gap: 1px;
+        /* You can also add some margins here to make it look prettier */
+        /* zoom:1; */
+        *display:inline;
+    }
+
+    .navbar li {
+        margin: 4px;
+    }
+
+    .isi {
+        margin: 0;
+        background: none;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 2rem;
     }
 }

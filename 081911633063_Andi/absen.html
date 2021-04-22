@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,66 +8,116 @@
     <title>Jadwal</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Exo:wght@500&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Exo:wght@500&family=Source+Sans+Pro:wght@600&display=swap"
+        rel="stylesheet">
     <script src="script.js"></script>
 </head>
+
 <body>
     <div class="content">
         <div class="navbar">
             <h1>Aula</h1>
-        <ul>
-            <li onclick="location.href='home.html';" onmouseover="setNewImage('home')" onmouseout="setOldImage('home')">
-                <img id="home" src="img/icon/home-outline.svg" old="img/icon/home-outline.svg" hover="img/icon/home.svg">HOME</li>
-            <li onclick="location.href='jadwal.html';" onmouseover="setNewImage('jadwal')" onmouseout="setOldImage('jadwal')">
-                <img id="jadwal" src="img/icon/jadwal-outline.svg" old="img/icon/jadwal-outline.svg" hover="img/icon/jadwal.svg">JADWAL</li>
-            <li onclick="location.href='tugas.html';" onmouseover="setNewImage('tugas')" onmouseout="setOldImage('tugas')">
-                <img id="tugas" src="img/icon/tugas-outline.svg" old="img/icon/tugas-outline.svg" hover="img/icon/tugas.svg">TUGAS</li>
-            <li class="active" >
-                <img id="absen" src="img/icon/absen.svg" old="img/icon/absen-outline.svg" hover="img/icon/absen.svg">ABSEN
-        </li>
-        </ul>
-    </div>
-    <div style=" display: flex;">
-        <div style="width: 13rem;"></div>
-        <div class="isi">
-            <h1 style="padding-left: 1rem;">Absen</h1>
-            <form name="absen" onsubmit="return validateForm()" class="container-child">
-                <div class="form-group">
-                    <label for="judul">Mata Pelajaran</label>
-                    <select class="form-control" id="kelas">
-                        <option>Matematika</option>
-                        <option>Fisika</option>
-                        <option>Kimia</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="kelas">Kelas</label>
-                    <div class="form-double">
-                        <select class="form-control" id="kelas">
-                            <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                        </select>
-                        <select class="form-control" id="kelass">
-                            <option>A</option>
-                            <option>B</option>
-                            <option>C</option>
-                        </select>
-    
+            <ul>
+                <li onclick="location.href='home.html';" onmouseover="setNewImage('home')"
+                    onmouseout="setOldImage('home')">
+                    <img id="home" src="img/icon/home-outline.svg" old="img/icon/home-outline.svg"
+                        hover="img/icon/home.svg"><span>HOME</span></li>
+                <li onclick="location.href='jadwal.html';" onmouseover="setNewImage('jadwal')"
+                    onmouseout="setOldImage('jadwal')">
+                    <img id="jadwal" src="img/icon/jadwal-outline.svg" old="img/icon/jadwal-outline.svg"
+                        hover="img/icon/jadwal.svg"><span>JADWAL</span></li>
+                <li onclick="location.href='tugas.html';" onmouseover="setNewImage('tugas')"
+                    onmouseout="setOldImage('tugas')">
+                    <img id="tugas" src="img/icon/tugas-outline.svg" old="img/icon/tugas-outline.svg"
+                        hover="img/icon/tugas.svg"><span>TUGAS</span></li>
+                <li class="active">
+                    <img id="absen" src="img/icon/absen.svg" old="img/icon/absen-outline.svg"
+                        hover="img/icon/absen.svg"><span>ABSEN</span>
+                <li id="garis">
+                    <div class="garis"></div>
+                </li>
+                <li onclick="location.href='akun.html';" onmouseover="setNewImage('akun')"
+                    onmouseout="setOldImage('akun')">
+                    <img id="akun" src="img/icon/akun-outline.svg" old="img/icon/akun-outline.svg"
+                        hover="img/icon/akun.svg"><span>AKUN</span></li>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="geser"></div>
+            <div class="isi">
+                <h1 id="header">Absen</h1>
+                <div class="flex-wrap" style="justify-content: flex-start;">
+                    <div class="task-group group-jadwal flex-col" style="gap: 12px;">
+                        <div class="fill flex-row center" color="red">Seni Budaya</div>
+                        <form action="" class="form-group card" style="gap: 8px">
+                            <h1 style="line-height: 1;">07:00-09:00</h1>
+                            <div class="flex-row form-content" style="gap: 6px;">
+                                <input type="radio" id="hadir" name="absen" value="hadir">
+                                <label for="hadir">Hadir</label>
+                            </div>
+                            <div class="flex-row form-content" style="gap: 6px;">
+                                <input type="radio" id="sakit" name="absen" value="sakit">
+                                <label for="sakit">Sakit</label>
+                            </div>
+                            <div class="flex-row form-content" style="gap: 6px;">
+                                <input type="radio" id="izin" name="absen" value="izin">
+                                <label for="izin">Izin</label>
+                            </div>
+                            <div class="form-group flex-row primary-button absen-button" style="margin-bottom: 0; margin-top: 12px;">
+                                <button type="submit" value="Submit">Absen</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="task-group group-jadwal flex-col" style="gap: 12px;">
+                        <div class="fill flex-row center" color="tosca">Kimia</div>
+                        <form action="" class="form-group card" style="gap: 8px">
+                            <h1 style="line-height: 1;">09:00-11:00</h1>
+                            <div class="flex-row form-content" style="gap: 6px;">
+                                <input type="radio" id="hadir" name="absen" value="hadir">
+                                <label for="hadir">Hadir</label>
+                            </div>
+                            <div class="flex-row form-content" style="gap: 6px;">
+                                <input type="radio" id="sakit" name="absen" value="sakit">
+                                <label for="sakit">Sakit</label>
+                            </div>
+                            <div class="flex-row form-content" style="gap: 6px;">
+                                <input type="radio" id="izin" name="absen" value="izin">
+                                <label for="izin">Izin</label>
+                            </div>
+                            <div class="form-group flex-row primary-button absen-button" style="margin-bottom: 0; margin-top: 12px;">
+                                <button type="submit" value="Submit">Absen</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="task-group group-jadwal flex-col" style="gap: 12px;">
+                        <div class="fill flex-row center" color="purple">Fisika</div>
+                        <form action="" class="form-group card" style="gap: 8px">
+                            <h1 style="line-height: 1;">12:00-13:30</h1>
+                            <div class="flex-row form-content" style="gap: 6px;">
+                                <input type="radio" id="hadir" name="absen" value="hadir">
+                                <label for="hadir">Hadir</label>
+                            </div>
+                            <div class="flex-row form-content" style="gap: 6px;">
+                                <input type="radio" id="sakit" name="absen" value="sakit">
+                                <label for="sakit">Sakit</label>
+                            </div>
+                            <div class="flex-row form-content" style="gap: 6px;">
+                                <input type="radio" id="izin" name="absen" value="izin">
+                                <label for="izin">Izin</label>
+                            </div>
+                            <div class="form-group flex-row primary-button absen-button" style="margin-bottom: 0; margin-top: 12px;">
+                                <button type="submit" value="Submit">Absen</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="captcha">Captcha</label>
-                    <img width="200px" style="padding-bottom: 10px;" src="https://thefallenbrain.files.wordpress.com/2016/05/input-black.gif" alt="">
-                    <input type="text" class="form-control" id="captcha" placeholder="Masukkan Captcha">
-                </div>
-                <div class="form-group primary-button">
-                    <button type="submit" value="Submit">Absen</button>
-                </div>
-            </form>
+                
+            </div>
         </div>
     </div>
-    </div>
-    
+
 </body>
+
 </html>
