@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>Register</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="mykode.css">
+		<link rel="stylesheet" href="kodeku.css">
+		
+		
+    </head>
+    
+                    <!------------HEADER----------->
+        <header>
+            <img class="logo" src="image/StudyRoom.png" alt="logo">
+            <div class="ignielHorizontal" align="right">
+			<ul>
+			<li><a href="price.html" title="Package Price">Package Price</a></a></li>
+			<li><a href="loginguru.html" title="Login Tutor">Login Tutor</a></a></li>
+			<li><a href="loginsiswa.html" title="Login Student">Login Student</a></a></li>
+			<li><a href="regist.html" title="Register">Register</a></li>
+			</ul>
+  </div>
+        </header>
+                    <!------------BATAS HEADER----------->
+    <img src = "image/register.png" align = right style= "width: 687px;height : 522px;">
+   <form action="action_page.php">
+  <div class="container">
+  <h1 align ="center" background="#FFFFFF">Register</h1>
+    <p align="center">Already have account?</p>
+	<p align = "center"><a href="loginsiswa.html">login</a></p>
+    <label>Username*</label>
+        <input type="text" name="username" id="username" placeholder="ex : afifadinda" required>
+	<label>E-Mail*</label>
+        <input type="email" name="email" id="email" placeholder="ex : afifadinda@gmail.com" required>
+    <label>Handphone*</label>
+        <input type="text" name="notelp" id="notelp" placeholder="ex : +627754368904" required>
+    <label>School*</label>
+        <input type="text" name="school" id="school" placeholder="ex : SMAN 5 Surabaya" required>
+	<label>Password*</label>
+        <input type="password" name="password" id="password" required placeholder="password">
+	<label>Paket</label>
+            <select name="paket" id="paket">
+            <option>==== Choose Paket ====</option>
+            <option value="SILVER">SILVER</option>
+            <option label="GOLD"></option>
+            <option label="PLATINUM"></option>
+            </select>	
+    <button type="submit" class="registerbtn"><a href="PaymentConfirmation.html" title="Register">Register</a></button>
+  
+  </div>
+</form>   
+    </body>  
+        <footer>
+            <div id="sosial-media">
+                <span>Connect with us</span>
+                <ul id="sosmed-list">
+                    <li><a href="https://www.twitter.com/"><img src="image/ant-design_twitter-circle-filled.svg" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="image/akar-icons_instagram-fill.svg" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/"><img src="image/akar-icons_facebook-fill.svg" alt=""></a></li>
+                </ul>
+            </div>
+                <p><span id="footer-cr"> &copy;2021 StudyRoom</span></p>
+        </footer>
+</html>
+    

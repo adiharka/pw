@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        PaymentConfirmation
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src = "image/payment.png" align = right style="width:630;height:590;">
+    <div style="align : center;background-color: #FFFFFF; border: 1px solid #17202A; height: auto;
+               margin: 30px 150px 20px; padding: 10px; text-align: auto; width: 415px; height: 600px;">
+    <h1 align="center"> Payment Confirmation </h1>
+    <h2 align="center">Thank you for purchasing the study package, <br/> if you have made a payment by BANK TRANSFER, 
+                       <br/> confirm your payment here so that it can be processed immediately.</h2>
+    <table align="center">
+        <tr>
+            <td>
+                <!--html form for crud operations-->   
+                <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Order Code*</label>
+                        <input type="text" name="kodepesanan" id="kodepesanan" placeholder="ex : Silver123" required>
+                    </div>
+                    <div>
+                        <label>Bank</label>
+                        <select name="bankAsal" id="bankAsal">
+                            <option>==== Choose Bank ====</option>
+                            <option value="BNI">BNI</option>
+                            <option label="BCA"></option>
+                            <option label="BRI"></option>
+                            <option label="Mandiri"></option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Username acoount bank*</label>
+                        <input type="text" name="namarek" id="namarek" placeholder="ex : dinda dandi" required>
+                    </div>
+                    <div>
+                        <label>Date</label>
+                        <input type="date" name="tglbayar" id="tglbayar" required>
+                    </div>
+                    <div>
+                        <label>Transfer Receipt*</label>
+                        <input type="file" name="buktitf" id="+ attach here" required>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <button type="submit" class="registerbtn"><a href="loginsiswa.html" title="Download">Confirm</a></button>
+                </form>
+            </td>
+        </tr>
+</body>

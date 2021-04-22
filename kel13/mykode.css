@@ -1,0 +1,122 @@
+body{
+background-color: #9EBDFF;}
+.logo {
+    cursor: pointer;
+}
+.ignielHorizontal ul {
+  background-color: #673ab7; /* Warna background menu */
+  max-width: 100%; /* Lebar maksimal menu */
+  overflow-x: auto;
+  border-color: transparent;
+  border-radius: 10px; 
+}
+.ignielHorizontal {
+  color: #fff;
+  line-height: 0px;
+  overflow: hidden;
+}
+.ignielHorizontal a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 13px;
+  line-height: 1.5em;
+  display: block;
+}
+.ignielHorizontal a:hover {
+  background-color: rgba(0,0,0,.25);
+  color: #fff;
+  text-decoration: none;
+}
+.ignielHorizontal ul, .ignielHorizontal li {
+  list-style: none;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0px;
+  padding: 0px;
+}
+@media screen and (max-width: 480px){
+  .ignielHorizontal a {
+    font-size: 13px;
+    padding: 8px 11px;
+  }
+}
+@media screen and (max-width: 360px){
+  .ignielHorizontal a {
+    font-size: 12px;
+    padding: 7px 10px;
+  }
+}
+table{
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+footer{
+	margin-bottom = 0px;
+    width: 100%;
+    height: max-content;
+    background-color: #9EBDFF;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    gap: 10px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 0;
+}
+
+#sosial-media {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    gap: 10px;
+    align-items: center;
+}
+
+#sosial-media span {
+    width: max-content;
+    height: max-content;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.25px;
+    /* line-height: 42px; */
+    color: #000000;
+}
+
+#sosmed-list {
+    width: max-content;
+    height: max-content;
+    list-style: none;
+    padding: 0;
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    gap: 30px;
+    align-items: center;
+}
+
+#sosmed-list li a img {
+    width: 38px;
+}
+
+#footer-cr {
+    height: max-content;
+    width: 100%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    /* line-height: 36px; */
+    text-align: center;
+    color: #000000;
+    /* color */
+    box-sizing: border-box;
+    padding: 4px;
+    background-color: #FFFFFF;
+}

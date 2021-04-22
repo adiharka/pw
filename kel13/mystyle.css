@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: #9EBDFF;}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+section .BoxImage {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 539px;
+    display: flex;
+    justify-content: left;
+}
+
+section .BoxMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+section .BoxMenu .formBox-BoxMenu {
+    width: 50%;
+}
+
+    section .BoxMenu .formBox-BoxMenu h2 {
+    color: #af2166;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+section .BoxMenu .formBox-BoxMenu .inputBox {
+    margin-bottom: 20px;
+}
+
+section .BoxMenu .formBox-BoxMenu .inputBox span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: black;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: "Poppins";
+}
+
+section .BoxMenu .formBox-BoxMenu .inputBox input {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #607d8b;
+    outline: none;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #000000;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background: transparent;
+    border-radius: 30px;
+    font-family: "Poppins";
+}
+
+section .BoxMenu .formBox-BoxMenu .inputBox input[type="submit"] {
+    background-color: #FFAF2C;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    font-weight:  500;
+    cursor: pointer;
+    font-family: "Poppins";
+    border: none;
+}
+
+section .BoxMenu .formBox-BoxMenu .inputBox input[type="submit"]:hover {
+    background-color: #FFAF2C;
+}
+
+section .BoxMenu .formBox-BoxMenu .Remember {
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+section .BoxMenu .formBox-BoxMenu .linkSign p a {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFAF2C;
+    text-decoration: underline;
+}
+
+li, a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #0f0f0f;
+    text-decoration: none;
+}
+
+li .b2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #0f0f0f;
+    text-decoration: none;
+}
+
+b, button{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #FFAF2C;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(100, 104, 112);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color:  rgb(242, 201, 76);
+}
+
+.pricy #prices {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    font-family: 'Poppins';
+    font-weight: normal;
+    position:initial;
+    justify-content: center;
+    border-style: hidden;
+}
+
+.pricy h1 {
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.pricy #prices {
+    width: 95%;
+    margin: auto auto 20px auto;
+    position: relative;
+    min-height: 340px;
+    padding-bottom: 55px;
+    text-align: center;
+    border-style: hidden;
+    /* background: whitesmoke; */
+    border-radius: 6px;
+}
+    
+.pricy .prices td {
+    width: 33%;
+    vertical-align: top;
+    border-radius:5px 5px 0 0;
+}
+
+.pricy #prices h2 {
+    display: block;
+    margin-bottom: 0px;
+    padding: 10px;
+    font-size: 1.3em;
+    background: #BC565C; 
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 5px 5px 0 0;
+}
+    
+.pricy #prices td:last-child h2 {
+    background: #3D966A;
+}
+    
+.pricy #prices h3 {
+    display: block;
+    margin: 0;
+    padding: 0 0 10px;
+    background: #af7396;
+    font-size: 0.9em;
+}
+    
+.pricy #prices td:last-child h3 {
+    background: #64E2A4;
+}
+    
+.pricy #prices h4 {
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+    background: #F86D76;
+    font-size: 1.75em;
+    box-sizing: border-box;
+}
+    
+.pricy #prices td:last-child h4 {
+    background: #64E2A4;
+}
+    
+.pricy #prices h5 {
+    display: block;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+    padding: 10px;
+    background: #F3AEB3;
+}
+    
+.pricy #prices td:last-child h5 {
+    background: #A4F8CF;
+}
+    
+.pricy #prices h2, .pricy #prices h3, .pricy #prices h4, .pricy #prices h5 {
+    color: rgb(255, 255, 255);
+}
+
+.pricy  #prices .popular{
+    margin-top: -10px;
+    min-height: 400px;
+}
+    
+.pricy #prices .popular h2 {
+    font-size: 1.8em;
+    background: #BBAA51;
+}
+    
+.pricy #prices .popular h3 {
+    background: #F2C94C;
+}
+    
+.pricy #prices .popular h4 {
+    background: #FAD668;
+}
+    
+.pricy #prices .popular h5 {
+    background: #D3CDA8;
+}
+    
+.pricy #prices p {
+    margin: 10px auto;
+    padding: 5px 0 5px;
+    width: 80%;
+    font-weight:300;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+    
+.pricy #prices h5 + p {
+    border-top: 1px solid rgba(0,0,0,0);
+}
+    
+.pricy .prices b {
+    display: block;
+    margin: auto;
+    width: 45%;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    font-size: 0.85em;
+    color: #fff;
+    background: #2F333C;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    border-radius: 3px;
+}
+    
+.pricy .popular .prices  b {
+    background: #003fd3;
+}
+    
+.pricy .prices b:hover {
+    background: #505A6B;
+}
+
+@media screen and (max-width: 700px) {
+    .pricy #prices td {
+        display: block !important;
+        width: 100% !important;
+    }
+    .pricy #prices {
+        min-height: 0;
+    }
+    .pricy #prices .popular {
+        margin-top: 0px;
+    }
+}
+
+
+table{
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+footer{
+	margin-bottom = 0px;
+    width: 100%;
+    height: max-content;
+    background-color: #9EBDFF;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    gap: 10px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 0;
+}
+
+#sosial-media {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    gap: 10px;
+    align-items: center;
+}
+
+#sosial-media span {
+    width: max-content;
+    height: max-content;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.25px;
+    /* line-height: 42px; */
+    color: #000000;
+}
+
+#sosmed-list {
+    width: max-content;
+    height: max-content;
+    list-style: none;
+    padding: 0;
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    gap: 30px;
+    align-items: center;
+}
+
+#sosmed-list li a img {
+    width: 38px;
+}
+
+#footer-cr {
+    height: max-content;
+    width: 100%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    /* line-height: 36px; */
+    text-align: center;
+    color: #000000;
+    /* color */
+    box-sizing: border-box;
+    padding: 4px;
+    background-color: #FFFFFF;
+}

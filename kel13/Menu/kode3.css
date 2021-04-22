@@ -1,0 +1,231 @@
+body {
+  background: #9EBDFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.imag {
+  position : relative;
+  top : 30px;
+  right : 150px;
+}
+.menu {
+  margin-top : 10px;
+  margin-right : 850px;
+  text-align: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.menu ul li {
+  float: left;
+  width: 93px;
+  height: 105px;
+  border-color: #e3e3e3;
+  background-color: #fff;
+  transition: background-color 0.2s linear 0s;
+}
+.menu ul li:first-child {border-radius: 25px 0 0 25px;}
+.menu ul li:last-child {border-radius: 0 25px 25px 0;}
+
+.menu ul li a {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.menu a i {
+  display: table-cell;
+  vertical-align: middle;
+  color: #ffa801;
+  font-size: 23px;
+  transition: all 0.2s linear 0s;
+}
+
+.menu a i:before {
+  border: 2px solid;
+  border-color: #006266;
+  border-radius: 500px;
+  width: 41px;
+  display: inline-block;
+  height: 41px;
+  line-height: 37px;
+  transition: color 0.2s linear 0s, 
+  font-size 0.2s linear 0s, 
+  border-color 0.2s linear 0.2s, 
+  height 0.2s linear 0s, 
+  width 0.2s linear 0s, 
+  line-height 0.2s linear 0s;
+}
+
+.menu a .link-text {
+  position: absolute;
+  bottom: 13px;
+  right: 10px;
+  color: #ffa801;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.2s linear 0s;
+}
+
+.menu ul li:hover {
+  background-color: #006266;
+}
+
+.menu ul li:hover .link-text {
+  opacity: 0;
+}
+
+.menu ul li:hover i {
+  color: #ffa801;
+  font-size: 43px;
+}
+
+.menu ul li:hover i:before {
+  border-color: transparent;
+  border-radius: 500px;
+  width: 66px;
+  height: 66px;
+  line-height: 60px;
+  transition: color 0.2s linear 0s, 
+  font-size 0.2s linear 0s, 
+  border-color 0.2s linear 0s, 
+  height 0.2s linear 0s, 
+  width 0.2s linear 0s, 
+  line-height 0.2s linear 0s;
+}
+
+h2{
+  font-family: 'cormorant', Times, serif;
+  font-size: 18pt;}
+  
+* {
+  box-sizing: border-box;
+}
+
+.column {
+   float: left;
+   padding: 10px;
+   width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.profile{
+  margin-left : 85px;
+  width: 450px;
+  height: 650px;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.profile h1{
+  font-family: 'cormorant', Times, serif;
+  font-size: 18pt;}
+
+.profile #box1, #box2, #box3, #box4, #box5{
+  margin-top : 20px;
+  margin-bottom : 10px;
+  width: 420px;
+  height: 170px;
+  background: #E5E5E5;
+  box-shadow: 0px 7px 20px #FCECD1;
+  border-radius: 20px;
+  line-height : 20px;
+  text-indent : 20px;
+}
+
+.img{
+  position : relative;
+  left : 780;
+  top : 10px;
+}
+footer{
+	margin-bottom = 0px;
+    width: 100%;
+    height: max-content;
+    background-color: #9EBDFF;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    gap: 10px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 0;
+}
+
+#sosial-media {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    gap: 10px;
+    align-items: center;
+}
+
+#sosial-media span {
+    width: max-content;
+    height: max-content;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.25px;
+    /* line-height: 42px; */
+    color: #000000;
+}
+
+#sosmed-list {
+    width: max-content;
+    height: max-content;
+    list-style: none;
+    padding: 0;
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    gap: 30px;
+    align-items: center;
+}
+
+#sosmed-list li a img {
+    width: 38px;
+}
+
+#footer-cr {
+    height: max-content;
+    width: 100%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    /* line-height: 36px; */
+    text-align: center;
+    color: #000000;
+    /* color */
+    box-sizing: border-box;
+    padding: 4px;
+}
+
+
+
+
