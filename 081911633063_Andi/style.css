@@ -131,7 +131,7 @@ a:hover {
 
 .task {
     background: #d3d3d3;
-    width: 11.5rem;
+    width: 11.9rem;
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
@@ -492,6 +492,10 @@ form {
         margin-right: 20px;
     }
 
+    .task {
+        width: 11.8rem;
+    }
+
     .container-child:first-child {
         margin: 0px;
         align-items: center;
@@ -511,6 +515,23 @@ form {
         height: 100vh;
         opacity: 1;
         background: radial-gradient(100% 100% at 30% 30%, #F9D1AD 0%, #E4DFC2 10%, #85D7D1 30%, #4CC0CE 70.65%, #0190A1 100%);
+    }
+
+    .task {
+        width: 8.2rem;
+        height: 95px;
+    }
+
+    .card {
+        width: 145px;
+    }
+
+    .group-jadwal {
+        max-width: 337px;
+    }
+
+    .task-group h1 {
+        font-size: 19px;
     }
 
     #header {
@@ -533,9 +554,10 @@ form {
     }
 
     .navbar {
-        height: 2.5rem;
+        height: 3rem;
         width: 100%;
         padding: 0;
+        padding-bottom: 0.5rem;
         top: auto;
         bottom: 0;
         display: flex;
@@ -545,6 +567,10 @@ form {
         backdrop-filter: blur(15px);
     }
     
+    .navbar img {
+        height: 25px;
+    }
+
     .navbar h1{
         display: none;
     }

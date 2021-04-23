@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Exo:wght@500&family=Source+Sans+Pro:wght@600&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="navbar">
+            <h1>Aula Guru</h1>
+            <ul>
+                <li class="active">
+                    <img id="home" src="img/icon/home.svg"><span>HOME</span></li>
+                <li onclick="location.href='guru_jadwal.html';" onmouseover="setNewImage('jadwal')"
+                    onmouseout="setOldImage('jadwal')">
+                    <img id="jadwal" src="img/icon/jadwal-outline.svg" old="img/icon/jadwal-outline.svg"
+                        hover="img/icon/jadwal.svg"><span>JADWAL</span></li>
+                <li onclick="location.href='guru_tugas.html';" onmouseover="setNewImage('tugas')"
+                    onmouseout="setOldImage('tugas')">
+                    <img id="tugas" src="img/icon/tugas-outline.svg" old="img/icon/tugas-outline.svg"
+                        hover="img/icon/tugas.svg"><span>TUGAS</span></li>
+                <li onclick="location.href='guru_absen.html';" onmouseover="setNewImage('absen')"
+                    onmouseout="setOldImage('absen')">
+                    <img id="absen" src="img/icon/absen-outline.svg" old="img/icon/absen-outline.svg"
+                        hover="img/icon/absen.svg"><span>ABSEN</span></li>
+                <li id="garis">
+                    <div class="garis"></div>
+                </li>
+                <li onclick="location.href='guru_akun.html';" onmouseover="setNewImage('akun')"
+                    onmouseout="setOldImage('akun')">
+                    <img id="akun" src="img/icon/akun-outline.svg" old="img/icon/akun-outline.svg"
+                        hover="img/icon/akun.svg"><span>AKUN</span></li>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="geser"></div>
+            <div class="isi flex-col">
+                <div class="flex-row">
+                    <h1 style="padding-left: 1rem;">Selamat Datang</h1>
+                    <!-- <img style="object-fit: cover;" width="400px" -->
+                        <!-- src="https://ouch-cdn.icons8.com/preview/772/f9ab877c-4089-459c-9814-88455b030420.png" alt=""> -->
+                </div>
+                <div class="garis" style="margin-bottom: 1.5rem;"></div>
+                <div class="flex-row" style="width: 100%; align-items: flex-start; gap: 2rem; justify-content: space-around;">
+                    <div class="flex-col">
+                        <h1 style="font-size: 24px;">Pelajaran Hari Ini</h1>
+                        <div class="task-group group-jadwal">
+                            <h1>Senin</h1>
+                            <div style="gap:0.65rem" class="tasks">
+                                <div onclick="location.href='#'" color="yellow" class="task jadwal">
+                                    <h1>Matematika</h1>
+                                    <p>07.00 - 08.40</p>
+                                </div>
+                                <div onclick="location.href='#'" color="tosca" class="task jadwal">
+                                    <h1>Kimia</h1>
+                                    <p>23:59 - 03:30</p>
+                                </div>
+                                <div onclick="location.href='#'" color="red" class="task jadwal">
+                                    <h1>Sejarah</h1>
+                                    <p>09.00 - 09.40</p>
+                                </div>
+                                <div onclick="location.href='#'" color="purple" class="task jadwal">
+                                    <h1>Fisika</h1>
+                                    <p>09.00 - 09.40</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-col" style="max-width: 485px;">
+                        <h1 style="font-size: 24px;">Tugas Terdekat</h1>
+                        <div class="task-group">
+                            <h1>Senin, 14 Januari</h1>
+                            <div class="tasks">
+                                <div onclick="location.href='#'" color="yellow" class="task">
+                                    <h1>Tugas BAB 3 - Aritmetika</h1>
+                                    <p>23:59 - Matematika</p>
+                                </div>
+                                <div onclick="location.href='#'" color="tosca" class="task">
+                                    <h1>Praktek Laboratorium</h1>
+                                    <p>23:59 - Kimia</p>
+                                </div>
+                                <div onclick="location.href='#'" color="red" class="task">
+                                    <h1>Sejarah Belanda</h1>
+                                    <p>23:59 - Sejarah</p>
+                                </div>
+                                <div onclick="location.href='#'" color="purple" class="task">
+                                    <h1>Hitung kec. pesawat</h1>
+                                    <p>23:59 - Fisika</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
