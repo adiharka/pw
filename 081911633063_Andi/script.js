@@ -18,3 +18,9 @@ function validateForm() {
     alert("Sukses absen")
   }
 }
+
+function hover(id) {
+  let el = document.getElementById(id);
+  el.classList.toggle('active');
+  // el.style.fill = 'white';
+}

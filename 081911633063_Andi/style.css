@@ -29,7 +29,7 @@ body::after {
     right: 0;
     position: fixed;
     background-color: white;
-    z-index: -1; 
+    z-index: -1;
 }
 
 h1 {
@@ -126,7 +126,6 @@ a:hover {
     font-size: 20px;
     margin: 0px;
     margin-bottom: 10px;
-
 }
 
 .task {
@@ -158,17 +157,48 @@ a:hover {
 }
 
 *[color=red] {
-    background: #e2818e;
+    background: #e48591;
 }
 
 *[color=purple] {
     background: #9fb0dd;
 }
 
+*[color=green] {
+    background: #b3dd9f;
+}
 
+*[color=info]:hover {
+    background: #85b1e4;
+}
+
+*[color=edit]:hover {
+    background: #b4cf95;
+}
+
+*[color=remove]:hover {
+    background: #dd9fae;
+}
+
+*[color=info] {
+    background: #4c85c5;
+}
+
+*[color=edit] {
+    background: #8dbe55;
+}
+
+*[color=remove] {
+    background: #cf637e;
+}
+
+.navbar svg {
+    stroke: var(--dark);
+    stroke-width: 2;
+}
 
 .task:hover {
-    box-shadow:inset 0px 0px 0px 2px var(--dark);
+    box-shadow: inset 0px 0px 0px 2px var(--dark);
     /* box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.25); */
 }
 
@@ -226,14 +256,12 @@ a:hover {
     top: 0rem;
     width: 12rem;
     height: 100%;
-    /* margin: 1rem; */
     padding: 0px;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     position: fixed;
-    background-color: white;
     box-shadow: 0px 2px 25px rgba(58, 58, 58, 0.25);
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .btm {
@@ -265,7 +293,7 @@ a:hover {
     margin: 0.5rem;
     padding: 0.25rem 0.5rem;
     transition: 0.2s ease;
-    
+
 }
 
 
@@ -276,11 +304,26 @@ a:hover {
 }
 
 .navbar .active {
-    /* background: linear-gradient(90deg, #1F005C 0%, #2F0265 14.29%, #620A7C 28.57%, #9C1A84 42.86%, #BF3163 57.14%, #DB4C42 71.43%, #E87C39 85.71%, #F19438 100%); */
-    background: var(--dark);
+    stroke: white;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: fill, color, background-color;
+    transition-property: fill, color, background-color;
     color: #EDF0F2;
-    font-weight: bold;
+}
 
+.active-click {
+    background: var(--dark);
+}
+
+.active-click li {
+    font-weight: bold;
+}
+
+.active-click svg {
+    fill: var(--secondary);
+    stroke: var(--primary);
+    stroke-width: 1;
 }
 
 .illust {
@@ -298,24 +341,48 @@ tr,
 th,
 td {
     border-collapse: collapse;
-    padding: 5px; 
+    padding: 5px;
     font-family: Source Sans Pro;
     font-style: normal;
 }
 
-th {
-    font-style: 600;
+tr {
+    border-radius: 10px;
 }
 
-th,
+.rowstart {
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+}
+
+.rowend {
+    border-radius: 0 10px 10px 0;
+}
+
+th {
+    font-style: 600;
+    font-size: 18px;
+}
+
 td {
-    border: 1px solid #d3d3d3;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border-right: 1px solid #d3d3d3; */
+    /* border-left: 1px solid #d3d3d3; */
+}
+
+tr:hover {
+    background-color: #6aa1e05b;
+    border-radius: 12px;
+}
+
+th {
+    /* border-bottom: 1px solid #d3d3d3; */
 }
 
 table {
-    border: 1px solid #DDDDDD;
-    background: rgba(255, 255, 255, 0.5);
-
+    /* border: 1px solid #DDDDDD; */
+    /* background: rgba(255, 255, 255, 0.5); */
 }
 
 form {
@@ -396,6 +463,24 @@ form {
     font-size: 18px;
 }
 
+button {
+    padding: 6px 10px;
+    margin: 3px 1px;
+    border-radius: 6px;
+    color: #F4F6F9;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--primary);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+
 .form-double {
     width: 100%;
     display: flex;
@@ -410,18 +495,13 @@ form {
 }
 
 .primary-button button {
-    width: 150px;
+    padding: 0rem 1rem;
     height: 45px;
     background: var(--dark);
     border-radius: 10px;
     border: none;
-    color: #F4F6F9;
     font-size: 16px;
-    overflow: hidden;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: color, background-color;
-    transition-property: color, background-color;
+
 }
 
 .center {
@@ -462,7 +542,6 @@ form {
     background: var(--dark);
 }
 
-
 .primary-button button:hover,
 .primary-button button:focus,
 .primary-button button:active {
@@ -470,13 +549,23 @@ form {
     background-color: var(--primary);
 }
 
+.isi-button button{
+    align-items: flex-end;
+    margin: 0;
+    margin-bottom: 21px;
+    max-width: 110px;
+    background: rgba(198, 247, 255, 0.5);   
+    color: #004182; 
+    border: 1px solid var(--primary);
+}
+
 #garis {
     pointer-events: none;
 }
 
 .garis {
-    border: 1px rgba(7, 36, 129, 0.2) solid; 
-    width: 10rem; 
+    border: 1px rgba(7, 36, 129, 0.2) solid;
+    width: 10rem;
     margin: auto;
     background: none;
     pointer-events: none;
@@ -484,6 +573,16 @@ form {
 
 #header {
     padding-left: 1rem;
+    margin: 0;
+}
+
+#back-button {
+    stroke: #004182;
+}
+
+#back-button:hover {
+    fill: white;
+    stroke: var(--primary);
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
@@ -511,6 +610,7 @@ form {
     body {
         background: none;
     }
+
     body::after {
         height: 100vh;
         opacity: 1;
@@ -542,7 +642,7 @@ form {
     #geser {
         width: 0;
     }
-    
+
     #garis {
         width: 0px;
         padding: 0;
@@ -562,16 +662,16 @@ form {
         bottom: 0;
         display: flex;
         flex-direction: row;
-        justify-content:center;
-        /* background: rgba(255, 255, 255, 0.2); */
+        justify-content: center;
+        align-items: center;
         backdrop-filter: blur(15px);
     }
-    
+
     .navbar img {
         height: 25px;
     }
 
-    .navbar h1{
+    .navbar h1 {
         display: none;
     }
 
@@ -592,7 +692,7 @@ form {
         gap: 1px;
         /* You can also add some margins here to make it look prettier */
         /* zoom:1; */
-        *display:inline;
+        *display: inline;
     }
 
     .navbar li {
